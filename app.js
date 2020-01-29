@@ -57,3 +57,12 @@ app.get('/', (req, res) => {
     people: people.profiles
   });
 });
+
+app.get('/profile',(req, res) =>{
+  // res.send(req.query.id);
+  const person = people.profiles.find(p => p.id == req.query.id);
+  res.render('profile', {
+    title: `About ${person.firstname} ${person.lastname}`,
+    person,
+  });
+});

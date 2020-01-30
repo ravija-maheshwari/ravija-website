@@ -53,16 +53,12 @@ const server = app.listen(7000, () =>{
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Homepage',
+    title: 'Ravija\'s Page!',
     people: people.profiles
   });
 });
 
-app.get('/profile',(req, res) =>{
+app.get('/game',(req, res) =>{
   // res.send(req.query.id);
-  const person = people.profiles.find(p => p.id == req.query.id);
-  res.render('profile', {
-    title: `About ${person.firstname} ${person.lastname}`,
-    person,
-  });
+  res.render('game')
 });

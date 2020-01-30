@@ -15,8 +15,9 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/boot', (req, res) => {
-  res.render('boot', {
+
+app.get('/header', (req, res) => {
+  res.render('header', {
     title: 'Ravija\'s Page!'
   });
 });

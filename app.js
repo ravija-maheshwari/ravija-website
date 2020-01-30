@@ -61,4 +61,4 @@ app.get('/', (req, res) => {
 app.get('/game',(req, res) =>{
   // res.send(req.query.id);
   res.render('game')
-});
+}); 

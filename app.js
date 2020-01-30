@@ -14,3 +14,9 @@ app.get('/', (req, res) => {
     title: 'Ravija\'s Page!'
   });
 });
+
+app.get('/boot', (req, res) => {
+  res.render('boot', {
+    title: 'Ravija\'s Page!'
+  });
+});

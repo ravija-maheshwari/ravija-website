@@ -1,12 +1,28 @@
 extends layout
 
 block content
-    div.container
-        each person in people
-              div.person
-                div.person-image(style=`background: url('./images/${person.imgSrc}') top center
-                no-repeat; background-size: cover;`)
-                h2.person-name
-                  | #{person.firstname} #{person.lastname}
-                a(href=`/profile?id=${person.id}`)
-                  | View Profile
+
+    section#about
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    h2 About
+                    p.lead
+                        | I'm a Software Engineering student at UNSW, Sydney. I code sometimes.
+
+    section#projects.bg-light
+    .container
+        .row
+            .col-lg-8.mx-auto
+                h2 Projects
+                p.lead
+                    | Add dungeon game and messaging application here
+
+
+    section#contact
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    h2 Contact
+                    p.lead
+                        | This should be a footer with my email, linkedin and facebook.

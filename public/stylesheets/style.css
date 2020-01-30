@@ -81,10 +81,7 @@
 /*  font-size: 20px*/
 /*}*/
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
+
 
 .splitrow {
    /*box-sizing: border-box;*/
@@ -95,8 +92,10 @@
 /* Create two equal columns that sits next to each other */
 .column {
   /*box-sizing: border-box;*/
-  flex: 50%;
+  flex: 90%;
+  /**height: 30%;**/
   padding: 100px;
+
   /*height: 300px; !* Should be removed. Only for demonstration *!*/
 }
 

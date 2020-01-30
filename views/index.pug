@@ -2,7 +2,7 @@ include header.pug
 
 //TBD : Fit width of screen
 header.bg-primary.text-white
-    .container.text-center
+    .container.text-center(style='max-width:100%;')
         h1(style='font-size:100px;') Hi, I'm Ravija Maheshwari.
         p.lead A budding Software Engineer
 
@@ -16,6 +16,9 @@ include contact.pug
 footer.py-5.bg-dark
     .container
         p.m-0.text-center.text-white Copyright &copy; Your Website 2019
+
+
+
     // /.container
 // Bootstrap core JavaScript
 script(src='vendor/jquery/jquery.min.js')

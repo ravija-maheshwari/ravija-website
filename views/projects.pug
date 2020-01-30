@@ -1,13 +1,22 @@
 section#about.bg-light
-    .container
-        .row
-            .col-lg-8.mx-auto
-                h2 Projects
-                p.lead
-                    | This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:
-                ul
-                    li Clickable nav links that smooth scroll to page sections
-                    li Responsive behavior when clicking nav links perfect for a one page website
-                    li
-                        | Bootstrap&apos;s scrollspy feature which highlights which section of the page you&apos;re on in the navbar
-                    li Minimal custom CSS so you are free to explore your own unique design options
+    .container(style='margin-top:40px;')
+      h2(style='text-align:center;') Projects
+      .row
+        .col-lg-6.mb-4
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='images/dungeon.png' alt='')
+            .card-body
+              h4.card-title
+                a(href='https://github.com/Ravija5/DungeonsGame') Dungeon Game
+              p.card-text
+                | A user friendly single player game based on playing dungeon style puzzles. With a partner from my lab class, I followed an agile development process to design and implement a desktop Java application.
+        .col-lg-6.mb-4
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='images/messaging.png' alt='')
+            .card-body
+              h4.card-title
+                a(href='https://github.com/Ravija5/MessagingApp') Messaging Simulator
+              p.card-text
+                | This application is an instant messaging application simulator (like WhatsApp, Facebook Messenger). It is a TCP based client server model. The server is mainly used to authenticate the clients and direct the messages (online or offline) between clients. Peer to peer functionality is also implemented where clients can talk among themselves bypassing the server.

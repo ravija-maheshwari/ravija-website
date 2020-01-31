@@ -1,14 +1,6 @@
-doctype html
 include imports.pug
 
-head
-    // Custom fonts for this template
-    link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i' rel='stylesheet')
-    link(href='vendor/fontawesome-free/css/all.min.css' rel='stylesheet')
-    // Custom styles for this template
-    link(href='stylesheets/resume.min.css' rel='stylesheet')
-
+//Side Nav Bar
 nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
     a.navbar-brand.js-scroll-trigger(href='#page-top')
         span.d-block.d-lg-none Ravija Maheshwari
@@ -30,228 +22,29 @@ nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
                 a.nav-link.js-scroll-trigger(href='#skills') Technical Skills
             li.nav-item
                 a.nav-link.js-scroll-trigger(href='#awards') Awards
-            li.nav-item
-                a.nav-link.js-scroll-trigger(href='#interests') Interests
-            li.nav-item
-                a.nav-link.js-scroll-trigger(href='index') Back
+
 .container-fluid.p-0
-    section#about.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h1.mb-0
-                | Ravija
-                span.text-primary Maheshwari
-            .subheading.mb-5
-                | UNSW Hall High Street 5 &middot; Randwick, NSW 2052 &middot; (+61) 0410235339  &middot;
-                a(href='mailto:ravija.maheshwari@student.unsw.edu.au') ravija.maheshwari@student.unsw.edu.au
-            //p.lead.mb-5
-              //  | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
-            .social-icons
-                a(href='https://www.linkedin.com/in/ravijamaheshwari/')
-                    i.fab.fa-linkedin-in
-                a(href='#https://github.com/Ravija5')
-                    i.fab.fa-github
 
-    hr.m-0
-    section#education.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h2.mb-5 Education
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 University Of New South Wales, Sydney
-                    ul
-                    .subheading.mb-3 Bachelor of Engineering, Software (Honours)
-                    div
-                        li UNSW Career Leader and Student Development Representative
-                        li WAM: 79.8
-                .resume-date.text-md-right
-                    span.text-primary Feb 2018 - Dec 2021 (Expected)
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between
-                .resume-content
-                    h3.mb-0 Colonel’s Central Academy, India
-                    .subheading.mb-3 Higher School Certificate (HSC)
-                    ul
-                    li ATAR (equivalent): 99
-                .resume-date.text-md-right
-                    span.text-primary
-
-    hr.m-0
-    section#experience.resume-section.p-3.p-lg-5.d-flex.justify-content-center
-        .w-100
-            h2.mb-5 Experience
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Student Development Representative Caller
-                    .subheading.mb-3 UNSW Philanthropy
-                    ul
-                    li
-                        |Promoted positive relations among UNSW and its wider alumni by engaging with alumni over telephone.
-                    li Sought donation towards a range of causes within the UNSW Impact Appeal and raised over&nbsp;
-                        strong $3000
-                        |&nbsp;towards the PVC Scholarship.
-                    li Marketed various charitable causes and persuasively communicated with alumni to convince them to get on board with UNSW Giving.
-                .resume-date.text-md-right
-                    span.text-primary June 2019 - Sept 2019
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Software Developer
-                    .subheading.mb-3 Projects Team, CSESoc UNSW
-                    ul
-                    li
-                        |Developing the Job Post creation module that enables employers to create job posts for&nbsp;
-                        strong 50,000+
-                        |&nbsp;UNSW students.
-                    li
-                        |Collaborating with 6 team members for development, testing and deployment of the portal.
-
-
-                .resume-date.text-md-right
-                    span.text-primary April 2018 - October 2018
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Computer Science Tutor
-                    .subheading.mb-3 Disha NuLife Charitable Trust
-                    ul
-                        li
-                            |Tutored multiple classes of 25 students with&nbsp;
-                        strong 75% of students
-                        |&nbsp;achieving Distinction and High Distinction grades in examinations
-                        li
-                            |Clearly articulated and tailored my communication skills to suit the comprehension levels of younger students
-                .resume-date.text-md-right
-                    span.text-primary October 2017 - Feb 2018
-
-    hr.m-0
-    section#projects.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h2.mb-5 Projects
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Ravija's Webpage
-                    a.subheading.mb-3(href="index") www.Update with link.com
-                    .subheading.mb-3
-                    ul
-                        li Technology Used: Node.js with Express, Pug and BootStrap
-                .resume-date.text-md-right
-                    span.text-primary
-
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Instant Messaging Simulator
-                    a.subheading.mb-3(href="https://github.com/Ravija5/MessagingApp") Code
-                    .subheading.mb-3
-                    ul
-                    li TCP based client-server and peer to peer messaging application
-                    li Technologies Used: Python Socket programming
-                .resume-date.text-md-right
-                    span.text-primary
-
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Dungeons Game
-                    a.subheading.mb-3(href="https://github.com/Ravija5/DungeonsGame") Code
-                    .subheading.mb-3
-                    ul
-                    li A user friendly single player game based on playing dungeon style puzzles
-                    li Developed in a team of 2 using agile methodology
-                    li Technologies Used: Java, JavaFX
-                .resume-date.text-md-right
-                    span.text-primary
-
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 Blood Management System
-                    a.subheading.mb-3(href="https://github.com/nithinsudhir/friendly-robot") Code
-                    .subheading.mb-3
-                    ul
-                    li A terminal based blood management software, which is formally verified using a verification language (Dafny)
-                    li Collaborated with a team of 5 to develop and verify this software
-                    li Technologies Used: Python, Dafny
-                .resume-date.text-md-right
-                    span.text-primary
-
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                .resume-content
-                    h3.mb-0 myShell
-                    a.subheading.mb-3(href="https://github.com/Ravija5/myShell") Code
-                    .subheading.mb-3
-                    ul
-                    li A Shell simulator that runs basic shell commands like cat, pwd, cd, ls and input redirection
-                    li Technologies Used: C
-                .resume-date.text-md-right
-                    span.text-primary
-
-
-    hr.m-0
-    section#volunteering.resume-section.p-3.p-lg-5.d-flex.justify-content-center
-        .w-100
-            h2.mb-5 Volunteering
-            .resume-item.d-flex.flex-column.flex-md-row.justify-content-between
-                .resume-content
-                    h3.mb-0 Career Leader
-                    .subheading.mb-3 UNSW Careers and Employment
-                    ul
-                    li
-                        |Marketed the Careers and Employment services to UNSW students and helped attain 16,000 likes on the Careers and Employment Facebook page.
-                    li
-                        |Assisted in organising the UNSW Careers Fair at the Hordern Pavilion, a successful event with over 4000 students and 40 companies attending.
-                .resume-date.text-md-right
-                    span.text-primary
-
-
+    include about.pug
     hr.m-0
 
-    section#skills.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h2.mb-5 Technical Skills
-            .subheading.mb-3 Programming Languages &amp; Tools
-            ul.list-inline.dev-icons
-                li.list-inline-item
-                    i.fab.fa-java
-                li.list-inline-item
-                    i.fab.fa-python
-                li.list-inline-item
-                    i.fab.fa-git
-                li.list-inline-item
-                    i.fab.fa-linux
-                li.list-inline-item
-                    i.fab.fa-node-js
-
-            .subheading.mb-3
-            ul.fa-ul.mb-0
-                li
-                    i.fa-li.fa.fa-check
-                    |               Java, C, Python program development
-                li
-                    i.fa-li.fa.fa-check
-                    |               Web development (Node.js, Express, Pug)
-                li
-                    i.fa-li.fa.fa-check
-                    |               Scripting (Perl, UNIX Bash)
-                li
-                    i.fa-li.fa.fa-check
-                    |               Version Control (Git)
+    include education.pug
     hr.m-0
-    section#interests.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h2.mb-5 Interests
-            p
-                | Apart from being a web developer, I enjoy most of my time listening to and playing music, socialising with my friends and working out.
-            p.mb-0
-                | When indoors, I follow a number of fantasy and drama television shows and spend my time trying genres of books outside my comfort zone.
 
-    section#awards.resume-section.p-3.p-lg-5.d-flex.align-items-center
-        .w-100
-            h2.mb-5 Awards &amp; Certifications
-            ul.fa-ul.mb-0
-                li
-                    i.fa-li.fa.fa-trophy.text-warning
-                    |               Future of Change Scholarship - UNSW
-                li
-                    i.fa-li.fa.fa-trophy.text-warning
-                    |               Java Programming: Solving Problems with Software - Coursera Certification from Duke University
-                li
-                    i.fa-li.fa.fa-trophy.text-warning
-                    |               Programming Foundations with JavaScript, HTML and CSS - Coursera Certification
+    include experience.pug
+    hr.m-0
+
+    include projects.pug
+    hr.m-0
+
+    include volunteering.pug
+    hr.m-0
+
+    include skills.pug
+    hr.m-0
+
+    include awards.pug
+
 
 // Bootstrap core JavaScript
 script(src='vendor/jquery/jquery.min.js')

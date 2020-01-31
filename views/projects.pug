@@ -1,22 +1,58 @@
-section#projects.bg-light
-    .container(style='margin-top:40px;')
-      h2(style='text-align:center;') Projects
-      .row
-        .col-lg-6.mb-4
-          .card.h-100
-            a(href='#')
-              img.card-img-top(src='images/dungeon.png' alt='')
-            .card-body
-              h4.card-title
-                a(href='https://github.com/Ravija5/DungeonsGame') Dungeon Game
-              p.card-text
-                | A user friendly single player game based on playing dungeon style puzzles. With a partner from my lab class, I followed an agile development process to design and implement a desktop Java application.
-        .col-lg-6.mb-4
-          .card.h-100
-            a(href='#')
-              img.card-img-top(src='images/messaging.png' alt='')
-            .card-body
-              h4.card-title
-                a(href='https://github.com/Ravija5/MessagingApp') Messaging Simulator
-              p.card-text
-                | This application is an instant messaging application simulator (like WhatsApp, Facebook Messenger). It is a TCP based client server model. The server is mainly used to authenticate the clients and direct the messages (online or offline) between <clients></clients> Peer to peer functionality is also implemented where clients can talk among themselves bypassing the server.
+section#projects.resume-section.p-3.p-lg-5.d-flex.align-items-center
+  .w-100
+    h2.mb-5 Projects
+    .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+      .resume-content
+        h3.mb-0 Ravija's Webpage
+        a.subheading.mb-3(href="index") www.Update with link.com
+        .subheading.mb-3
+        ul
+          li Technology Used: Node.js with Express, Pug and BootStrap
+      .resume-date.text-md-right
+        span.text-primary
+
+    .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+      .resume-content
+        h3.mb-0 Instant Messaging Simulator
+        a.subheading.mb-3(href="https://github.com/Ravija5/MessagingApp") Code
+        .subheading.mb-3
+        ul
+        li TCP based client-server and peer to peer messaging application
+        li Technologies Used: Python Socket programming
+      .resume-date.text-md-right
+        span.text-primary
+
+    .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+      .resume-content
+        h3.mb-0 Dungeons Game
+        a.subheading.mb-3(href="https://github.com/Ravija5/DungeonsGame") Code
+        .subheading.mb-3
+        ul
+        li A user friendly single player game based on playing dungeon style puzzles
+        li Developed in a team of 2 using agile methodology
+        li Technologies Used: Java, JavaFX
+      .resume-date.text-md-right
+        span.text-primary
+
+    .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+      .resume-content
+        h3.mb-0 Blood Management System
+        a.subheading.mb-3(href="https://github.com/nithinsudhir/friendly-robot") Code
+        .subheading.mb-3
+        ul
+        li A terminal based blood management software, which is formally verified using a verification language (Dafny)
+        li Collaborated with a team of 5 to develop and verify this software
+        li Technologies Used: Python, Dafny
+      .resume-date.text-md-right
+        span.text-primary
+
+    .resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+      .resume-content
+        h3.mb-0 myShell
+        a.subheading.mb-3(href="https://github.com/Ravija5/myShell") Code
+        .subheading.mb-3
+        ul
+        li A Shell simulator that runs basic shell commands like cat, pwd, cd, ls and input redirection
+        li Technologies Used: C
+      .resume-date.text-md-right
+        span.text-primary

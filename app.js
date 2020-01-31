@@ -15,9 +15,21 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/index', (req, res) => {
+  res.render('index', {
+    title: 'Ravija\'s Page!'
+  });
+});
+
 
 app.get('/header', (req, res) => {
   res.render('header', {
+    title: 'Ravija\'s Page!'
+  });
+});
+
+app.get('/resume', (req, res) => {
+  res.render('resume', {
     title: 'Ravija\'s Page!'
   });
 });

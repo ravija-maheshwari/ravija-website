@@ -1,6 +1,6 @@
 FROM node:13.7.0
 
-# Create app directory
+# Create app directory inside the image
 WORKDIR /usr/src/app
 
 # Install app dependencies

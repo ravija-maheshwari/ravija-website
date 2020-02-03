@@ -6,6 +6,18 @@ head
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description' content='')
     meta(name='author' content='')
+
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157622337-1')
+    script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-157622337-1');
+
+
     title Ravija's Page
     // Bootstrap core CSS
     link(href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
